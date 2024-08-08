@@ -494,6 +494,12 @@ body {
   background: #0084d3;
 }
 @media screen and (min-width: 768px) {
+  #es-mixa.es-mixa .es-kv__content {
+    justify-content: space-between;
+  }
+  #es-mixa.es-mixa .es-kv__bottom {
+    margin-bottom: 32px;
+  }
   #es-mixa.es-mixa .es-kv__logo--mb {
     display: none;
   }
@@ -510,10 +516,16 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
+    width: 100%;
+  }
+  #es-mixa.es-mixa .es-kv__img--plus {
+    scale: 1.1;
+    left: -189px;
+    top: 69%;
   }
   #es-mixa.es-mixa .es-kv__packshot {
     margin-right: -32px;
-    margin-left: 64px;
+    margin-left: 133px;
     padding-top: 60px;
   }
   #es-mixa.es-mixa .es-kv__wrapper {
@@ -550,9 +562,12 @@ body {
     flex-flow: column;
     gap: 32px;
   }
+  #es-mixa.es-mixa .es-features__title {
+    margin-bottom: 64px;
+  }
   #es-mixa.es-mixa .es-features__container {
     flex-flow: row;
-    align-items: center;
+    align-items: flex-end;
   }
   #es-mixa.es-mixa .es-features__image {
     flex: 1;
@@ -560,6 +575,7 @@ body {
   }
   #es-mixa.es-mixa .es-features__content {
     flex: 1;
+    gap: 48px;
   }
   #es-mixa.es-mixa .es-features__feature {
     display: flex;
@@ -576,6 +592,9 @@ body {
   }
   #es-mixa.es-mixa .es-features__icon {
     min-width: 90px;
+  }
+  #es-mixa.es-mixa .es-formula__title {
+    margin-block: 64px;
   }
   #es-mixa.es-mixa .es-routine__container {
     flex-direction: row;
@@ -597,6 +616,9 @@ body {
   #es-mixa.es-mixa .es-cross {
     padding: 0 40px;
     margin-bottom: 120px;
+  }
+  #es-mixa.es-mixa .es-cross__title {
+    margin-block: 64px;
   }
   #es-mixa.es-mixa .es-cross__product {
     align-items: center;
