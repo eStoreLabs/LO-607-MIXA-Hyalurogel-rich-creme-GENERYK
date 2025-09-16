@@ -46,7 +46,7 @@ body {
   }
 
   .es-kv {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 
     &__img {
       @include img;
@@ -79,11 +79,16 @@ body {
       @include text;
       bottom: 20px;
       right: 20px;
+
       position: absolute;
       text-align: right;
-      color: #fff;
+      color: #ffffff;
       font-size: 23px;
       font-weight: 300;
+      @media (min-width: 450px) {
+        top: 20px;
+        color: #064f89;
+      }
     }
 
     &__wrapper {
@@ -138,11 +143,10 @@ body {
     }
 
     &__texts {
-
       :nth-child(2),
       :nth-child(3) {
         &::before {
-          content: '+ ';
+          content: "+ ";
           position: absolute;
           margin-left: -20px;
         }
@@ -162,7 +166,7 @@ body {
   }
 
   .es-benefits {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 
     &__img {
       @include img;
@@ -202,7 +206,7 @@ body {
   }
 
   .es-features {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 
     &__img {
       @include img;
@@ -234,7 +238,7 @@ body {
     }
 
     &__feature {
-      width: 200px;
+      width: 300px;
 
       &:hover {
         .es-features__icon {
@@ -262,7 +266,7 @@ body {
   }
 
   .es-formula {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 
     &__img {
       @include img;
@@ -329,7 +333,7 @@ body {
   }
 
   .es-routine {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 
     &__container {
       margin-top: 48px;
@@ -347,6 +351,10 @@ body {
       text-align: center;
       text-wrap: balance;
       width: 300px;
+    }
+
+    &__imgCtn--2 {
+      margin-left: 19%;
     }
 
     &__line {
@@ -368,7 +376,7 @@ body {
     &__number {
       font-weight: 700;
       font-size: 30px;
-      background-color: #FFF;
+      background-color: #fff;
       border-radius: 99px;
       width: 48px;
       height: 48px;
@@ -397,7 +405,7 @@ body {
   }
 
   .es-cross {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 
     &__img {
       @include img;
@@ -491,14 +499,14 @@ body {
     }
   }
 
-
   @media screen and (min-width: 768px) {
     .es-kv {
       &__content {
-        justify-content:space-between;
+        justify-content: space-between;
       }
       &__bottom {
-        margin-bottom: 32px;
+        margin-block: 32px;
+        width: 90%;
       }
       &__logo {
         &--mb {
@@ -531,7 +539,6 @@ body {
         }
       }
 
-
       &__packshot {
         margin-right: -32px;
         margin-left: 133px;
@@ -540,6 +547,7 @@ body {
 
       &__wrapper {
         display: flex;
+        padding-right: 32px;
       }
 
       &__texts {
@@ -561,6 +569,7 @@ body {
 
       &__content {
         flex: 1;
+        padding-right: 32px;
       }
 
       &__benefit {
@@ -601,6 +610,7 @@ body {
       &__content {
         flex: 1;
         gap: 48px;
+        padding-left: 32px;
       }
 
       &__feature {
@@ -629,12 +639,23 @@ body {
       &__title {
         margin-block: 64px;
       }
+      &__container {
+        padding: 32px;
+      }
+      &__single {
+        width: 40%;
+        flex: 1 1 0;
+      }
+      &__label {
+        font-size: 26px;
+      }
     }
 
     .es-routine {
       &__container {
         flex-direction: row;
         align-items: flex-start;
+        padding-inline: 32px;
       }
       &__single {
         width: 33%;
@@ -649,8 +670,8 @@ body {
           max-width: 100%;
         }
       }
-
     }
+
     .es-cross {
       padding: 0 40px;
       margin-bottom: 120px;
@@ -686,7 +707,6 @@ body {
         top: -20px;
       }
     }
-    
   }
 }
 
