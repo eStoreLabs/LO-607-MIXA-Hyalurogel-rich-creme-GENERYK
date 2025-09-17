@@ -21,7 +21,7 @@ body {
   margin: 0 auto;
 }
 
-#es-mixa.es-mixa {
+#es-rc #es-rc-content {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -309,21 +309,32 @@ body {
       position: relative;
       margin-bottom: 24px;
     }
-
+    &__overlay {
+      position: absolute;
+      width: 90%;
+      height: 30%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgb(0, 132, 211);
+      mix-blend-mode: multiply;
+      min-width: 250px;
+      z-index: 1;
+    }
     &__label {
       @include text;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background: rgba(0, 70, 166, 0.8);
-      padding: 16px 8px;
-      width: 70%;
+      padding: 32px 16px;
+      min-width: 250px;
       color: #fff;
-      font-size: 20px;
+      font-size: 29px;
       font-weight: 700;
       text-transform: uppercase;
       text-align: center;
+      z-index: 2;
     }
 
     &__text {
